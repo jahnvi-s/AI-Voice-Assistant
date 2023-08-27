@@ -72,6 +72,9 @@ if __name__ == '__main__':
             webbrowser.open("netflix.com")
         elif 'open spotify' in query:
             webbrowser.open("spotify.com")
+            
+        elif 'send email' in query:
+            webbrowser.open("gmail.com")
 
         elif 'play music' in query:
             music_dir ="C:\\Users\\singh\\PycharmProjects\\MYAI\\music"
@@ -84,10 +87,8 @@ if __name__ == '__main__':
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"The time is {strTime}")
-
+            
+        '''This code may differ based on the address of your coding application'''
         elif 'open code' in query:
             codepath = "C:\\Users\\singh\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code\\Visual Studio Code.lnk"
             os.startfile(codepath)
-
-        elif 'send email' in query:
-            webbrowser.open("gmail.com")
